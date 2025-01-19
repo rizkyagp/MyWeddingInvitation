@@ -312,6 +312,60 @@ video{
   background-color: #0056b3; /* Darker shade on hover */
 }
 
+.comment-section {
+  width: 90%;
+  /* margin: 20px auto; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* padding: 20px; */
+  background-color: #f9f9f9;
+}
+
+.comment {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.comment img {
+  border-radius: 50%; /* Make the image circular */
+  margin-right: 10px; /* Space between image and text */
+  width: 50px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  padding-right: 10px;
+}
+
+.comment-content {
+  display: flex;
+  flex-direction: column; /* Stack h4 and p vertically */
+}
+
+.comment h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-family: myFirstFont;
+}
+
+.comment p {
+  margin: 5px 0 0;
+  color: #555;
+  padding-top: 5px;
+  font-family: myFirstFont;
+}
+
+
+
+
+/* .comments-container {
+  max-height: 640px;
+  overflow-y: scroll;
+} */
+
 /* .zoom {
   padding: 50px;
   background-color: green;
