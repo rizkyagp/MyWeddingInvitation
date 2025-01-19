@@ -14,6 +14,11 @@
     font-family: myFirstFont;
 }
 
+body {
+  transition: opacity 0.5s ease-out;
+  background-color: #4b4b4b;
+}
+
 img {
   border-radius: 8px;
 }
@@ -238,6 +243,75 @@ video{
 .play-text {
   margin-left: 10px; /* Adjust the space as needed */
 }
+
+.overlay {
+  display: flex; /* Use flexbox to center the button */
+  position: fixed; /* Position it fixed to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* Ensure it is above other content */
+  flex-direction: column;
+}
+
+.circle-photo {
+  width: 200px; /* Adjust the size as needed */
+  height: 200px; /* Adjust the size as needed */
+  /* border-radius: 50%; This makes it a circle */
+  background-image: url('/assets/img/logo1.png'); /* Replace with your photo path */
+  background-size: cover; /* Ensures the image covers the circle */
+  background-position: center; /* Centers the image */
+  margin: 0 auto; /* Centers the circle horizontally */
+  position: absolute; /* Allows positioning relative to the overlay */
+  top: 20px;
+}
+
+.profile-photo-1 {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  border-radius: 50%; /* This makes it a circle */
+  background-image: url('/assets/img/logo1.png'); /* Replace with your photo path */
+  background-size: cover; /* Ensures the image covers the circle */
+  background-position: center; /* Centers the image */
+  margin: 0 auto; /* Centers the circle horizontally */
+  position: relative; /* Allows positioning relative to the overlay */
+  top: -20px; /* Adjusts the position above the button */
+  /* padding-right: 20px; */
+}
+.profile-photo-2 {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  border-radius: 50%; /* This makes it a circle */
+  background-image: url('/assets/img/logo1.png'); /* Replace with your photo path */
+  background-size: cover; /* Ensures the image covers the circle */
+  background-position: center; /* Centers the image */
+  margin: 0 auto; /* Centers the circle horizontally */
+  position: relative; /* Allows positioning relative to the overlay */
+  top: -20px; /* Adjusts the position above the button */
+}
+
+.overlay-profile {
+  display: flex;
+  flex-direction: row;
+}
+.open-button {
+  padding: 10px 20px; /* Button padding */
+  font-size: 18px; /* Button font size */
+  color: white; /* Button text color */
+  background-color: #007bff; /* Button background color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.open-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
 /* .zoom {
   padding: 50px;
   background-color: green;
