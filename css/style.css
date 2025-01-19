@@ -1,0 +1,254 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(/assets/fonts/Inter_24pt-Regular.ttf);    
+  }
+
+.head-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; Ensure it takes full width
+}
+
+.body {
+    font-family: myFirstFont;
+}
+
+img {
+  border-radius: 8px;
+}
+
+video{
+
+  border-radius: 8px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: auto 440px auto;
+
+}
+
+.mid {
+  display: flex; /* Make the parent a flex container */
+  flex-direction: column; /* Stack children vertically */
+}
+
+.mid > div {
+    /* background-color: #f1f1f1; */
+    /* border: 1px solid rgb(255, 255, 255); */
+    /* padding: 10px; */
+    /* text-align: center; */
+    /* margin: auto;     */
+    /* color: rgb(255, 255, 255); */
+  }
+  .mid-logo {
+    display: flex; 
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically if needed */
+    text-align: center; /* Center text inside if applicable */
+}
+.mid-text-ket {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start;
+    font-family: myFirstFont;
+    color: rgb(255, 255, 255);
+  
+}
+
+.mid-text-ket-genre {
+  display: flex; 
+  /* flex-direction: column;  */
+  /* align-items: flex-start;  */
+  /* justify-content: flex-start; */
+  font-family: myFirstFont;
+  text-align: left; /* Align text to the left */
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold; 
+
+}
+  
+.mid-text-ket-desc {
+  display: flex; 
+  /* flex-direction: column;  */
+  /* align-items: flex-start;  */
+  /* justify-content: flex-start; /* */
+  font-family: myFirstFont;
+  text-align: justify; /*Align text to the left */
+  font-size: 18px;  
+  margin-bottom: 15px;
+  color: rgb(180, 176, 176);
+
+} 
+.mid-text-title-1 {
+  display: flex; 
+  font-family: myFirstFont;
+  text-align: justify; 
+  font-size: 18px;  
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold; 
+
+} 
+
+.mid-text-title-2 {
+  display: flex; 
+  font-family: myFirstFont;
+  text-align: justify; /*Align text to the left */
+  font-size: 18px;  
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold; 
+
+} 
+
+.mid-text-title {
+  display: flex; 
+  font-family: myFirstFont;
+  text-align: justify; /*Align text to the left */
+  font-size: 18px;  
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold; 
+
+} 
+
+
+
+.mid-rounded-box {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally (optional) */
+  background-color: #ffffff; /* Background color of the box */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  margin-top: 20px; /* Space above the box */
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  width: 80%; /* Set width to 80% of the parent */
+  max-width: 400px; /* Optional: Set a maximum width */
+  margin: 20px auto; /* Center the box horizontally with auto margins */
+  margin-bottom: 25px;
+  height: 5px; /* Set a specific height for vertical centering */
+}
+.mid-rounded-box p {
+  font-size: 20px; /* Set a consistent font size */
+  margin: 0; /*  Remove default margin */
+  align-items: center; 
+  justify-content: flex-start;
+  font-family: myFirstFont;
+  font-weight: bold; 
+  /* font-size: ; */
+  color: black;
+  
+}
+
+.mid-bride-groom-box {
+  display: flex; /* Use flexbox to arrange children side by side */
+  justify-content: space-between; /* Optional: Space between the boxes */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Ensure it takes full width of the parent */
+  margin-bottom: 15px;
+}
+.mid-bride-groom-box img {
+  /* background-color: #ffffff; */
+  width: 95%;
+  /* height: 320px; */
+  border: #ffffff;
+  border-width: 100px;
+}
+
+.mid-bride-groom-name {
+  display: flex; 
+  font-family: myFirstFont;
+  text-align: center; 
+  font-size: 18px;  
+  color: rgb(255, 255, 255);
+  font-weight: bold; 
+  justify-content: left; 
+}
+.mid-bride-groom-parent {
+  display: flex; 
+  font-family: myFirstFont;
+  text-align: left; 
+  font-size: 12px;  
+  color: rgb(180, 176, 176);
+  /* font-weight: bold;  */
+  justify-content: left; 
+  margin-top: 5px;
+}
+
+.mid-seasons-box {
+  display: flex; /* Use flexbox to arrange children side by side */
+  flex-direction: column; 
+  justify-content: left; /* Optional: Space between the boxes */
+  
+  font-family: myFirstFont;
+  text-align: left; 
+  font-size: 12px;  
+  color: rgb(180, 176, 176);
+}
+.mid-seasons-box img {
+  /* background-color: #ffffff; */
+  width: 209px;
+  /* height: 320px; */
+  border: #ffffff;
+  border-width: 100px;
+  padding-right: 10px;
+}
+
+.mid-episode-sec {
+  display: flex; /* Use flexbox to arrange children side by side */
+  /* flex-direction: row;  */
+  justify-content: left; /* Optional: Space between the boxes */
+  align-items: center; /* Center items vertically */
+  /* width: 100%; Ensure it takes full width of the parent */
+  margin-bottom: 15px;
+
+  font-family: myFirstFont;
+  text-align: left; 
+  font-size: 12px;  
+  color: rgb(180, 176, 176);
+}
+
+
+.mid-episode-name {
+  display: flex; /* Use flexbox to arrange children side by side */
+  flex-direction: column; 
+  justify-content: left; /* Optional: Space between the boxes */
+
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.photo-grid>div{
+  width: 130px;
+  height: 195px;
+  background-color: #ffffff;
+  margin: 5px;
+  justify-content: center;
+  border-radius: 8px;
+}
+.play-text {
+  margin-left: 10px; /* Adjust the space as needed */
+}
+/* .zoom {
+  padding: 50px;
+  background-color: green;
+  transition: transform .2s;
+  /* width: 200px; */
+  /* height: 200px; */
+  /* margin: 0 auto; */
+/* } */
+
+/* .zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  /* -webkit-transform: scale(1.5); Safari 3-8 */
+  /* transform: scale(1.5);  */
+/* }  */ 
