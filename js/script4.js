@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
   // Fetch data from the API
   fetch(
-    "https://script.google.com/macros/s/AKfycbxXNx51K9HfQT1F6iS2V54YQ9hhgcVQilPrC2jv2aqzZHGZenHilWo4C6W6LPW7euwg/exec"
+    // "https://script.google.com/macros/s/AKfycbxXNx51K9HfQT1F6iS2V54YQ9hhgcVQilPrC2jv2aqzZHGZenHilWo4C6W6LPW7euwg/exec"
     // "https://script.google.com/macros/s/AKfycbxXNx51K9HfQT1F6iS2V54YQ9hhgcVQilPrC2jv2aqzZHGZ"
+    "https://script.google.com/macros/s/AKfycbxL4GY311oHqwxIb8ejDr_MOOB0WOlFrxpYtyRamGLoZ9XoPK33CGtBbFz8PxBB8T82/exec"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -38,7 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch(
       //   "https://script.google.com/macros/s/AKfycby7SvT6NxISzEqqQd2sYm63Bo7us8KtxqOm8Y7UsnireV_KQGn3D4kXCkhGYmI_sY4/",
       //   "https://script.google.com/macros/s/AKfycby7SvT6NxISzEqqQd2sYm63Bo7us8KtxqOm8Y7UsnireV_KQGn3D4kXCkhGYmI_sY4/",
-      "https://script.google.com/macros/s/AKfycbw04TYxszyf5t2tXdv2FXzr-MxEhvolvhFkHlrkN0MRgrDjWwa5AgRI_6suDXw5eIfA/",
+      //   "https://script.google.com/macros/s/AKfycbw04TYxszyf5t2tXdv2FXzr-MxEhvolvhFkHlrkN0MRgrDjWwa5AgRI_6suDXw5eIfA/",
+      "https://script.google.com/macros/s/AKfycbxL4GY311oHqwxIb8ejDr_MOOB0WOlFrxpYtyRamGLoZ9XoPK33CGtBbFz8PxBB8T82/exec",
       {
         method: "POST",
 
