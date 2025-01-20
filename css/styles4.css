@@ -7,6 +7,14 @@
   background-color: #f9f9f9;
 }
 
+.comments-list {
+  max-height: 400px; /* Set a maximum height for the chat */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ddd; /* Optional: Add a border */
+  padding: 10px; /* Optional: Add padding */
+  margin-bottom: 20px; /* Space between comments and form */
+}
+
 .comment {
   border-bottom: 1px solid #ddd;
   padding: 10px 0;

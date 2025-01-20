@@ -26,6 +26,8 @@
         <div class="mid-video">
           <video autoplay muted loop width="440">
             <source src="/assets/prewed.mp4" type="video/mp4">
+            <track kind="metadata" label="cuepoints" data-removeondestroy="">
+            <track kind="chapters" label="chapters" data-removeondestroy="">
             Your browser does not support the video tag.
           </video>
           
@@ -176,7 +178,7 @@
         </form>
         <div class="comment-section">
           <!-- <h2>Comments</h2> -->
-          <div id="comments-list"></div>
+          <div id="comments-list" class="comments-list"></div>
         </div>
     
     

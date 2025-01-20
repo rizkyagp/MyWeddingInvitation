@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const commentsList = document.getElementById("comments-list");
   const commentForm = document.getElementById("comment-form");
-
+  const apiUrl =
+    "https://script.google.com/macros/s/AKfycbzaIUW36LJfqaT5-P_qRkLqg56FPRcRP_7nlrzCZC3dQL8QXpT9SCY8xdBT0zdSj8lP/exec";
   const images = [
     "assets/img/comment1.png", // Replace with your image URLs
     "assets/img/comment2.png",
@@ -12,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch(
     // "https://script.google.com/macros/s/AKfycbxXNx51K9HfQT1F6iS2V54YQ9hhgcVQilPrC2jv2aqzZHGZenHilWo4C6W6LPW7euwg/exec"
     // "https://script.google.com/macros/s/AKfycbxXNx51K9HfQT1F6iS2V54YQ9hhgcVQilPrC2jv2aqzZHGZ"
-    "https://script.google.com/macros/s/AKfycbxL4GY311oHqwxIb8ejDr_MOOB0WOlFrxpYtyRamGLoZ9XoPK33CGtBbFz8PxBB8T82/exec"
+    // "https://script.google.com/macros/s/AKfycbxL4GY311oHqwxIb8ejDr_MOOB0WOlFrxpYtyRamGLoZ9XoPK33CGtBbFz8PxBB8T82/exec"
+    apiUrl
   )
     .then((response) => response.json())
     .then((data) => {
@@ -32,31 +34,34 @@ document.addEventListener("DOMContentLoaded", function () {
   commentForm.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the default form submission
 
+    const randomNumber = Math.floor(Math.random() * 4) + 1;
     const name = document.getElementById("name").value;
     const commentText = document.getElementById("comment").value;
-
+    // avanum
     // Send data to the Google Apps Script
     fetch(
       //   "https://script.google.com/macros/s/AKfycby7SvT6NxISzEqqQd2sYm63Bo7us8KtxqOm8Y7UsnireV_KQGn3D4kXCkhGYmI_sY4/",
       //   "https://script.google.com/macros/s/AKfycby7SvT6NxISzEqqQd2sYm63Bo7us8KtxqOm8Y7UsnireV_KQGn3D4kXCkhGYmI_sY4/",
       //   "https://script.google.com/macros/s/AKfycbw04TYxszyf5t2tXdv2FXzr-MxEhvolvhFkHlrkN0MRgrDjWwa5AgRI_6suDXw5eIfA/",
-      "https://script.google.com/macros/s/AKfycbxL4GY311oHqwxIb8ejDr_MOOB0WOlFrxpYtyRamGLoZ9XoPK33CGtBbFz8PxBB8T82/exec",
+      //   "https://script.google.com/macros/s/AKfycbxL4GY311oHqwxIb8ejDr_MOOB0WOlFrxpYtyRamGLoZ9XoPK33CGtBbFz8PxBB8T82/exec",
+      apiUrl,
       {
         method: "POST",
-
-        headers: {
-          "Content-Type": "application/json",
-          mode: "no-cors",
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Credential": "false",
-        },
-        body: JSON.stringify({ name: name, comment: commentText }),
+        body: JSON.stringify({
+          avanum: randomNumber,
+          name: name,
+          comment: commentText,
+        }),
       }
     )
       .then((response) => response.json())
       .then((data) => {
         // Add the new comment to the DOM
-        addCommentToDOM({ Name: name, Comment: commentText });
+        addCommentToDOM({
+          avanum: randomNumber,
+          name: name,
+          Comment: commentText,
+        });
         // Clear the form fields
         commentForm.reset();
       })
@@ -80,5 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 `;
 
     commentsList.appendChild(commentDiv);
+    // Scroll to the bottom of the comments list
+    commentsList.scrollTop = commentsList.scrollHeight;
   }
 });
