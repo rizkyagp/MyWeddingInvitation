@@ -1,17 +1,18 @@
 @font-face {
-    font-family: myFirstFont;
-    src: url(/assets/fonts/Inter_24pt-Regular.ttf);    
-  }
+  font-family: myFirstFont;
+  src: url(/assets/fonts/Inter_24pt-Regular.ttf);
+}
 
 .head-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; Ensure it takes full width
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* Ensure it takes full width */
 }
 
 .body {
-    font-family: myFirstFont;
+  font-family: myFirstFont;
 }
 
 body {
@@ -23,15 +24,13 @@ img {
   border-radius: 8px;
 }
 
-video{
-
+video {
   border-radius: 8px;
 }
 
 .main {
-    display: grid;
-    grid-template-columns: auto 440px auto;
-
+  display: grid;
+  grid-template-columns: auto 440px auto;
 }
 
 .mid {
@@ -40,31 +39,30 @@ video{
 }
 
 .mid > div {
-    /* background-color: #f1f1f1; */
-    /* border: 1px solid rgb(255, 255, 255); */
-    /* padding: 10px; */
-    /* text-align: center; */
-    /* margin: auto;     */
-    /* color: rgb(255, 255, 255); */
-  }
-  .mid-logo {
-    display: flex; 
-    justify-content: center; /* Center the logo horizontally */
-    align-items: center; /* Center the logo vertically if needed */
-    text-align: center; /* Center text inside if applicable */
+  /* background-color: #f1f1f1; */
+  /* border: 1px solid rgb(255, 255, 255); */
+  /* padding: 10px; */
+  /* text-align: center; */
+  /* margin: auto;     */
+  /* color: rgb(255, 255, 255); */
+}
+.mid-logo {
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center; /* Center the logo vertically if needed */
+  text-align: center; /* Center text inside if applicable */
 }
 .mid-text-ket {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: flex-start;
-    font-family: myFirstFont;
-    color: rgb(255, 255, 255);
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: myFirstFont;
+  color: rgb(255, 255, 255);
 }
 
 .mid-text-ket-genre {
-  display: flex; 
+  display: flex;
   /* flex-direction: column;  */
   /* align-items: flex-start;  */
   /* justify-content: flex-start; */
@@ -73,56 +71,30 @@ video{
   font-size: 18px;
   margin-bottom: 15px;
   color: rgb(255, 255, 255);
-  font-weight: bold; 
-
+  font-weight: bold;
 }
-  
+
 .mid-text-ket-desc {
-  display: flex; 
+  display: flex;
   /* flex-direction: column;  */
   /* align-items: flex-start;  */
   /* justify-content: flex-start; /* */
   font-family: myFirstFont;
   text-align: justify; /*Align text to the left */
-  font-size: 18px;  
+  font-size: 18px;
   margin-bottom: 15px;
   color: rgb(180, 176, 176);
-
-} 
-.mid-text-title-1 {
-  display: flex; 
-  font-family: myFirstFont;
-  text-align: justify; 
-  font-size: 18px;  
-  margin-bottom: 15px;
-  color: rgb(255, 255, 255);
-  font-weight: bold; 
-
-} 
-
-.mid-text-title-2 {
-  display: flex; 
-  font-family: myFirstFont;
-  text-align: justify; /*Align text to the left */
-  font-size: 18px;  
-  margin-bottom: 15px;
-  color: rgb(255, 255, 255);
-  font-weight: bold; 
-
-} 
+}
 
 .mid-text-title {
-  display: flex; 
+  display: flex;
   font-family: myFirstFont;
   text-align: justify; /*Align text to the left */
-  font-size: 18px;  
+  font-size: 18px;
   margin-bottom: 15px;
   color: rgb(255, 255, 255);
-  font-weight: bold; 
-
-} 
-
-
+  font-weight: bold;
+}
 
 .mid-rounded-box {
   display: flex; /* Use flexbox for layout */
@@ -142,13 +114,12 @@ video{
 .mid-rounded-box p {
   font-size: 20px; /* Set a consistent font size */
   margin: 0; /*  Remove default margin */
-  align-items: center; 
+  align-items: center;
   justify-content: flex-start;
   font-family: myFirstFont;
-  font-weight: bold; 
+  font-weight: bold;
   /* font-size: ; */
   color: black;
-  
 }
 
 .mid-bride-groom-box {
@@ -167,33 +138,33 @@ video{
 }
 
 .mid-bride-groom-name {
-  display: flex; 
+  display: flex;
   font-family: myFirstFont;
-  text-align: center; 
-  font-size: 18px;  
+  text-align: center;
+  font-size: 18px;
   color: rgb(255, 255, 255);
-  font-weight: bold; 
-  justify-content: left; 
+  font-weight: bold;
+  justify-content: left;
 }
 .mid-bride-groom-parent {
-  display: flex; 
+  display: flex;
   font-family: myFirstFont;
-  text-align: left; 
-  font-size: 12px;  
+  text-align: left;
+  font-size: 12px;
   color: rgb(180, 176, 176);
   /* font-weight: bold;  */
-  justify-content: left; 
+  justify-content: left;
   margin-top: 5px;
 }
 
 .mid-seasons-box {
   display: flex; /* Use flexbox to arrange children side by side */
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: left; /* Optional: Space between the boxes */
-  
+
   font-family: myFirstFont;
-  text-align: left; 
-  font-size: 12px;  
+  text-align: left;
+  font-size: 12px;
   color: rgb(180, 176, 176);
 }
 .mid-seasons-box img {
@@ -214,25 +185,23 @@ video{
   margin-bottom: 15px;
 
   font-family: myFirstFont;
-  text-align: left; 
-  font-size: 12px;  
+  text-align: left;
+  font-size: 12px;
   color: rgb(180, 176, 176);
 }
 
-
 .mid-episode-name {
   display: flex; /* Use flexbox to arrange children side by side */
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: left; /* Optional: Space between the boxes */
-
 }
 
 .photo-grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
-.photo-grid>div{
+.photo-grid > div {
   width: 130px;
   height: 195px;
   background-color: #ffffff;
@@ -240,6 +209,38 @@ video{
   justify-content: center;
   border-radius: 8px;
 }
+
+.mid-venue-box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.mid-venue-box > div {
+  width: 210px;
+  height: 195px;
+  background-color: #ffffff;
+  margin: 5px;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.venue-grid-title {
+  font-family: myFirstFont;
+  text-align: center;
+}
+.venue-grid-text {
+  font-family: myFirstFont;
+  text-align: center;
+}
+/* .venue-grid-fill {
+  display: flex;
+  flex-direction: column;
+}
+.venue-grid-fill > div {
+  justify-content: center;
+  align-items: center;
+  font-family: myFirstFont;
+} */
+
 .play-text {
   margin-left: 10px; /* Adjust the space as needed */
 }
@@ -262,7 +263,7 @@ video{
   width: 200px; /* Adjust the size as needed */
   height: 200px; /* Adjust the size as needed */
   /* border-radius: 50%; This makes it a circle */
-  background-image: url('/assets/img/logo1.png'); /* Replace with your photo path */
+  background-image: url("/assets/img/logo1.png"); /* Replace with your photo path */
   background-size: cover; /* Ensures the image covers the circle */
   background-position: center; /* Centers the image */
   margin: 0 auto; /* Centers the circle horizontally */
@@ -274,7 +275,7 @@ video{
   width: 100px; /* Adjust the size as needed */
   height: 100px; /* Adjust the size as needed */
   border-radius: 50%; /* This makes it a circle */
-  background-image: url('/assets/img/logo1.png'); /* Replace with your photo path */
+  background-image: url("/assets/img/logo1.png"); /* Replace with your photo path */
   background-size: cover; /* Ensures the image covers the circle */
   background-position: center; /* Centers the image */
   margin: 0 auto; /* Centers the circle horizontally */
@@ -286,7 +287,7 @@ video{
   width: 100px; /* Adjust the size as needed */
   height: 100px; /* Adjust the size as needed */
   border-radius: 50%; /* This makes it a circle */
-  background-image: url('/assets/img/logo1.png'); /* Replace with your photo path */
+  background-image: url("/assets/img/logo1.png"); /* Replace with your photo path */
   background-size: cover; /* Ensures the image covers the circle */
   background-position: center; /* Centers the image */
   margin: 0 auto; /* Centers the circle horizontally */
@@ -311,72 +312,3 @@ video{
 .open-button:hover {
   background-color: #0056b3; /* Darker shade on hover */
 }
-
-.comment-section {
-  width: 90%;
-  /* margin: 20px auto; */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  /* padding: 20px; */
-  background-color: #f9f9f9;
-}
-
-.comment {
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Center items vertically */
-}
-
-.comment:last-child {
-  border-bottom: none;
-}
-
-.comment img {
-  border-radius: 50%; /* Make the image circular */
-  margin-right: 10px; /* Space between image and text */
-  width: 50px; /* Set a fixed width */
-  height: 50px; /* Set a fixed height */
-  padding-right: 10px;
-}
-
-.comment-content {
-  display: flex;
-  flex-direction: column; /* Stack h4 and p vertically */
-}
-
-.comment h4 {
-  margin: 0;
-  font-size: 1.1em;
-  font-family: myFirstFont;
-}
-
-.comment p {
-  margin: 5px 0 0;
-  color: #555;
-  padding-top: 5px;
-  font-family: myFirstFont;
-}
-
-
-
-
-/* .comments-container {
-  max-height: 640px;
-  overflow-y: scroll;
-} */
-
-/* .zoom {
-  padding: 50px;
-  background-color: green;
-  transition: transform .2s;
-  /* width: 200px; */
-  /* height: 200px; */
-  /* margin: 0 auto; */
-/* } */
-
-/* .zoom:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  /* -webkit-transform: scale(1.5); Safari 3-8 */
-  /* transform: scale(1.5);  */
-/* }  */ 
