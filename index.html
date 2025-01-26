@@ -11,6 +11,7 @@
     <script src="js/script.js" defer></script>
     <script src="js/rsvpScript.js" defer></script>
     <script src="js/commentScript.js" defer></script>
+    <script src="js/audioScript.js" defer></script>
     <!-- <script src="js/commentScript.js"></script> -->
     
     <!-- Link to your JavaScript -->
@@ -29,7 +30,7 @@
       </div>
       <div class="mid">
         <div class="mid-video">
-          <video autoplay muted playsinline loop width="440" preload="auto">
+          <video id="myVideo" muted playsinline loop width="440" preload="auto">
             <source src="/assets/prewed.mp4" type="video/mp4">
             <track kind="metadata" label="cuepoints" data-removeondestroy="">
             <track kind="chapters" label="chapters" data-removeondestroy="">
@@ -81,6 +82,31 @@
            </div>
         </div>
     
+        <div class="mid-text-title">
+          Watch Now !
+        </div>
+        <div class="mid-venue-box">
+          <div class="venue-grid-fill">
+            <div class="venue-grid-title">AKAD</div>
+            <div class="venue-grid-photo">
+              <img class="photo-icon" src="/assets/img/icon-akad.png" >
+            </div>
+            <div class="venue-grid-text">Sabtu, 15 Februari 2025</div>
+            <div class="venue-grid-text">08.00 WIB</div>
+          </div>
+          <div class="venue-grid-fill">
+            <div class="venue-grid-title">RESEPSI</div>
+            <div class="venue-grid-photo">
+              <img class="photo-icon" src="/assets/img/icon-resepsi.png" >
+            </div>
+            <div class="venue-grid-text">Sabtu, 15 Februari 2025</div>
+            <div class="venue-grid-text">11.00 - 13.00 WIB</div>
+
+
+          </div>          
+        </div>
+
+        
         <div class="mid-text-title" >
           Seasons 1 : 
         </div>
@@ -90,7 +116,7 @@
             <img class="mid-bride-box" src="/assets/img/Dini_1.jpg" alt="Dini">
             <div class="mid-episode-name"> 
               <div style="font-size: 20px; color: white; padding-bottom: 5px;">Episode 1 We Meet</div>
-              <div>S1 E1 • 15 Februari 2024 • 60m</div>
+              <div>S1 E1 • 15 Februari 2025 • 60m</div>
             </div>
           </div>
           <div class="mid-episode-sec" style="font-size: 15px;">
@@ -101,7 +127,7 @@
             <img class="mid-bride-box" src="/assets/img/Dini_1.jpg" alt="Dini">
             <div class="mid-episode-name"> 
               <div style="font-size: 20px; color: white; padding-bottom: 5px;">Episode 2 Get To Know</div>
-              <div>S1 E2 • 15 Februari 2024 • 60m</div>
+              <div>S1 E2 • 15 Februari 2025 • 60m</div>
             </div>
           </div>
           <div class="mid-episode-sec" style="font-size: 15px;">
@@ -112,7 +138,7 @@
             <img class="mid-bride-box" src="/assets/img/Dini_1.jpg" alt="Dini">
             <div class="mid-episode-name"> 
               <div style="font-size: 20px; color: white; padding-bottom: 5px;">Episode 3 Steady For Love</div>
-              <div>S1 E3 • 15 Februari 2024 • 60m</div>
+              <div>S1 E3 • 15 Februari 2025 • 60m</div>
             </div>
           </div>
           <div class="mid-episode-sec" style="font-size: 15px;">
@@ -123,7 +149,7 @@
             <img class="mid-bride-box" src="/assets/img/Dini_1.jpg" alt="Dini">
             <div class="mid-episode-name"> 
               <div style="font-size: 20px; color: white; padding-bottom: 5px;">Episode 4 Choose For A Lifetime</div>
-              <div>S1 E4 • 15 Februari 2024 • 60m</div>
+              <div>S1 E4 • 15 Februari 2025 • 60m</div>
             </div>
           </div>
           <div class="mid-episode-sec" style="font-size: 15px;">
@@ -134,7 +160,7 @@
             <img class="mid-bride-box" src="/assets/img/Dini_1.jpg" alt="Dini">
             <div class="mid-episode-name"> 
               <div style="font-size: 20px; color: white; padding-bottom: 5px;">Episode 5 Be Your Endgame</div>
-              <div>S1 E5 • 15 Februari 2024 • 60m</div>
+              <div>S1 E5 • 15 Februari 2025 • 60m</div>
             </div>
           </div>
           <div class="mid-episode-sec" style="font-size: 15px;">
@@ -143,30 +169,7 @@
     
           
         </div>
-        <div class="mid-text-title">
-          Venue :
-        </div>
-        <div class="mid-venue-box">
-          <div class="venue-grid-fill">
-            <div class="venue-grid-title">AKAD</div>
-            <div class="venue-grid-photo">
-              <img class="photo-icon" src="/assets/img/icon-akad.png" >
-            </div>
-            <div class="venue-grid-text">Sabtu, 15 Februari 2024</div>
-            <div class="venue-grid-text">08.00 WIB</div>
-          </div>
-          <div class="venue-grid-fill">
-            <div class="venue-grid-title">RESEPSI</div>
-            <div class="venue-grid-photo">
-              <img class="photo-icon" src="/assets/img/icon-resepsi.png" >
-            </div>
-            <div class="venue-grid-text">Sabtu, 15 Februari 2024</div>
-            <div class="venue-grid-text">11.00 - 13.00 WIB</div>
-
-
-          </div>          
-        </div>
-
+        
         <div class="mid-text-title" style="margin-top: 10px;" >
           Locations : 
         </div>
@@ -189,7 +192,8 @@
           <div>
             <img class="photo" src="/assets/img/film1.jpg" alt="the good dinosaur" style="max-width: 100%;">
           </div>
-          <div>2</div>
+          <div><img class="photo" src="/assets/img/film2.jpg" alt="the good dinosaur" style="max-width: 100%;">
+          </div>
           <div>3</div>
           <div>1</div>
           <div>2</div>
@@ -263,10 +267,7 @@
     <!-- <script src="js/commentScript.js"></script> -->
   </body>
   <footer>
-    <script>
-      window.settingAutoplay
-    </script>
-    <audio controls autoplay loop preload="auto">
+    <audio id="myAudio" loop preload="auto">
       <!-- <source src="assets/Beginning_Middle_End_Leah_Nobel.ogg" type="audio/ogg"> -->
       <source src="assets/Beginning_Middle_End_Leah_Nobel.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
