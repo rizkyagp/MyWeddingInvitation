@@ -17,7 +17,13 @@
 
 body {
   transition: opacity 0.5s ease-out;
-  background-color: #4b4b4b;
+  background-color: #646262;
+  /* background-image: linear-gradient( */
+  /* to top, */
+  /* rgba(132, 18, 18, 0.09) 0%, rgba(0, 0, 0, 0.09) 100% #1c3caf, */
+  /* #a2b3f3 */
+  /* ); */
+  /* min-height: 100px; */
 }
 
 img {
@@ -38,14 +44,6 @@ video {
   flex-direction: column; /* Stack children vertically */
 }
 
-.mid > div {
-  /* background-color: #f1f1f1; */
-  /* border: 1px solid rgb(255, 255, 255); */
-  /* padding: 10px; */
-  /* text-align: center; */
-  /* margin: auto;     */
-  /* color: rgb(255, 255, 255); */
-}
 .mid-logo {
   display: flex;
   justify-content: center; /* Center the logo horizontally */
@@ -217,29 +215,35 @@ video {
 .mid-venue-box > div {
   width: 210px;
   height: 195px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   margin: 5px;
   justify-content: center;
   border-radius: 8px;
+  color: #ffffff;
 }
 
 .venue-grid-title {
   font-family: myFirstFont;
   text-align: center;
+  padding-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .venue-grid-text {
   font-family: myFirstFont;
   text-align: center;
+  padding-top: 5px;
 }
-/* .venue-grid-fill {
-  display: flex;
-  flex-direction: column;
+.venue-grid-photo {
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
-.venue-grid-fill > div {
-  justify-content: center;
-  align-items: center;
-  font-family: myFirstFont;
-} */
+.photo-icon {
+  max-width: 60px;
+}
 
 .play-text {
   margin-left: 10px; /* Adjust the space as needed */
@@ -252,7 +256,7 @@ video {
   left: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 1); /* Semi-transparent background 0.7*/
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   z-index: 1000; /* Ensure it is above other content */
