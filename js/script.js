@@ -2,6 +2,9 @@
 const urlParams = new URLSearchParams(window.location.search);
 const toValue = urlParams.get("to"); // Get the value of 'to'
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
 // Step 2: Display the parameter on the page
 if (toValue) {
   document.getElementById(
